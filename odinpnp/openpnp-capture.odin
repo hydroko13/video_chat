@@ -31,7 +31,7 @@
 package openpnp
 
 when ODIN_OS == .Windows {
-	#panic("WINDOWS SUPPORT IS WIP, TODO FINISH THIS MAXIM")
+	foreign import lib "openpnp-capture.lib"
 }
 when ODIN_OS == .Linux {
 	foreign import lib "libopenpnp-capture.so"
